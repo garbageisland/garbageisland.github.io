@@ -1,5 +1,5 @@
 var order = [
-  // 'steve','bugs','cookie'
+  // 'steve','bugs'
 ];
 
 var questions = {
@@ -357,6 +357,268 @@ var questions = {
         'content': 'riot2.jpg',
         'points' : {
             'default' : 0,
+        },
+      },
+    },
+  },
+  'election' : {
+    'question': 'where were you on election night?',
+    'answers' : {
+      'a' : {
+        'content': 'election1.jpg',
+        'points' : {
+          'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'election2.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'election3.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'election4.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+    },
+  },
+    'game' : {
+    'question': 'which game show attracts the most annoying contestants?',
+    'answers' : {
+      'a' : {
+        'content': 'game1.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'game5.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'game2.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'game4.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+    },
+  },
+              'career' : {
+    'question': 'when you were a kid you wanted to grow up to be:',
+    'answers' : {
+      'a' : {
+        'content': 'career8.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'career5.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'career11.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'career10.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+    },
+  },
+              'home' : {
+    'question': 'choose your new home:',
+    'answers' : {
+      'a' : {
+        'content': 'home1.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'home2.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'home3.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'home4.jpg',
+        'points' : {
+            'default' : 0,
+
+        },
+      },
+    },
+  },
+              'mannequin' : {
+    'question': 'How did you feel the day after the election?',
+    'answers' : {
+      'a' : {
+        'content': 'mannequin.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'mannequin5.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'mannequin3.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'mannequin4.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+    },
+  },
+              'pattern' : {
+    'question': 'Pick a pattern.',
+    'answers' : {
+      'a' : {
+        'content': 'pattern1.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'b' : {
+        'content': 'pattern2.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'c' : {
+        'content': 'pattern3.jpg',
+        'points' : {
+            'default' : 0,
+        },
+      },
+      'd' : {
+        'content': 'pattern4.jpg',
+        'points' : {
+            'default' : 0,
+          },
+        },
+      },
+    },
+    'phenomena' : {
+      'question': 'Which phenomena do you want to experience?',
+      'answers' : {
+        'a' : {
+          'content': 'phenomena.jpg',
+          'points' : {
+              'default' : 0,
+          },
+        },
+        'b' : {
+          'content': 'phenomena2.jpg',
+          'points' : {
+              'default' : 0,
+          },
+        },
+        'c' : {
+          'content': 'phenomena3.jpg',
+          'points' : {
+              'default' : 0,
+          },
+        },
+        'd' : {
+          'content': 'phenomena4.jpg',
+          'points' : {
+              'default' : 0,
+            },
+          },
+        },
+      },
+      'plant' : {
+        'question': 'Pick a house plant.',
+        'answers' : {
+          'a' : {
+            'content': 'plant1.jpg',
+            'points' : {
+                'default' : 0,
+            },
+          },
+          'b' : {
+            'content': 'plant2.jpg',
+            'points' : {
+                'default' : 0,
+            },
+          },
+          'c' : {
+            'content': 'plant3.jpg',
+            'points' : {
+                'default' : 0,
+            },
+          },
+          'd' : {
+            'content': 'plant4.jpg',
+            'points' : {
+                'default' : 0,
+              },
+            },
+          },
+        },
+        'staircase' : {
+          'question': 'This staircase leads to heaven:',
+          'answers' : {
+            'a' : {
+              'content': 'staircase1.jpg',
+              'points' : {
+                  'default' : 0,
+              },
+            },
+            'b' : {
+              'content': 'staircase2.jpg',
+              'points' : {
+                  'default' : 0,
+              },
+            },
+            'c' : {
+              'content': 'staircase3.jpg',
+              'points' : {
+                  'default' : 0,
+              },
+            },
+            'd' : {
+              'content': 'staircase4.jpg',
+              'points' : {
+                  'default' : 0,
         },
       },
     },
