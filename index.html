@@ -12,6 +12,7 @@
     <script>
       $(document).ready(function(){
         var the_order = (order && order.length > 0) ? order : questions;
+        var count = 1;
         for (var i in the_order){
           var id;
           if (Array.isArray(the_order)){
@@ -21,7 +22,7 @@
           }
           var Q = questions[id];
           console.log(i);
-          $('#container').append('<h2>'+Q.question+'</h2>');
+          $('#container').append('<h2>'+count+' ('+id+') : '+Q.question+'</h2>');
           $('#container').append('<div id="Q_'+id+'" class="question"></div>');
           for (var a in Q.answers){
             var A = Q.answers[a];
@@ -35,6 +36,7 @@
               $('#Q_'+id+'_A_'+a).append('<p>'+point+' '+val+'</p>');
             }
           }
+        count++;
         }
       })
     </script>
