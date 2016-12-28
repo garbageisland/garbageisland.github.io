@@ -1,7 +1,15 @@
 <html>
   <head>
     <title>quiz: prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <style>
+      .question{
+        display:block;
+      }
+      .answer {
+      }
+    </style>
   </head>
   <body>
     <div id="container">
@@ -39,7 +47,7 @@
             var func = now+', '+next+', \''+letter+'\'';
             console.log(func);
             $('#Q_'+id)
-              .append('<a href="#" onclick="next_question('+func+'); return false;"><div id="Q_'+id+'_A_'+letter+'" class="answer"></div></a>');
+              .append('<a href="#" onclick="next_question('+func+');"><div id="Q_'+id+'_A_'+letter+'" class="answer"></div></a>');
 
             $('#Q_'+id+'_A_'+letter)
               .append('<div id="'+id.toString()+'_'+letter+'" class="square" style="background-image:url(\''+img+'\')"></div>')
