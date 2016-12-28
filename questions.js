@@ -2,26 +2,27 @@ var order = [
   'home',
   'plant',
   'pattern',
-  'social',
   'career',
   'phenomena',
+  'crowd',
   'worst',
+  'election',
+  'poo',
   'game',
   'cookie',
-  'election',
   'mannequin',
   'fruit',
   'bugs',
   'code',
-  'steve',
-  'crowd',
-  'poo',
-  'riot',
-  'protest',
-  'tourism',
-  'celebs',
-  'staircase',
+  'social',
   'spirit',
+  'staircase',
+  'hack',
+  'riot',
+  'tourism',
+  'steve',
+  'celebs',
+  'protest',
 ];
 
 var questions = {
@@ -122,7 +123,8 @@ var questions = {
     },
   },
   'protest' : {
-    'question': 'what is your current outlook on the future?',
+    // 'question': 'what is your current outlook on the future?',
+    'question': 'how do you feel about the shape of things?',
     'answers' : {
       'a' : {
         'content': 'protest1.jpg',
@@ -151,7 +153,9 @@ var questions = {
     },
   },
   'cookie' : {
-    'question': 'which candidate should lead the nation?',
+    // 'question': 'which candidate should lead the nation?',
+    // 'question': 'which candidate are you in love with?',
+    'question': 'who are you in love with?',
     'answers' : {
       'a' : {
         'content': 'cookie1.jpg',
@@ -210,7 +214,8 @@ var questions = {
     },
   },
   'worst' : {
-    'question': 'what is the worst?',
+    // 'question': 'what is the worst?',
+    'question': 'how has your day been so far?',
     'answers' : {
       'a' : {
         'content': 'worst1.jpg',
@@ -225,7 +230,7 @@ var questions = {
         },
       },
       'c' : {
-        'content': 'worst3.jpg',
+        'content': 'worst5.jpg',
         'points' : {
           'default' : 0,
         },
@@ -297,7 +302,8 @@ var questions = {
     },
   },
   'celebs' : {
-    'question': 'who do you believe is still alive, out there in the universe, making humanity great again?',
+    // 'question': 'who do you believe is still alive, out there in the universe, making humanity great again?',
+    'question': 'who do you believe is secretly still around, making humanity great again?',
     'answers' : {
       'a' : {
         'content': 'celeb8.jpg',
@@ -318,7 +324,7 @@ var questions = {
         },
       },
       'd' : {
-        'content': 'celeb6.jpg',
+        'content': 'celeb11.jpg',
         'points' : {
           'default' : 0,
         },
@@ -355,7 +361,7 @@ var questions = {
     },
   },
   'riot' : {
-    'question': 'in which cultural event would you participate?',
+    'question': 'in which cultural event would you most likely participate?',
     'answers' : {
       'a' : {
         'content': 'riot5.jpg',
@@ -376,7 +382,7 @@ var questions = {
         },
       },
       'd' : {
-        'content': 'riot2.jpg',
+        'content': 'riot6.jpg',
         'points' : {
           'default' : 0,
         },
@@ -413,7 +419,8 @@ var questions = {
     },
   },
   'game' : {
-    'question': 'which game show attracts the most annoying contestants?',
+    // 'question': 'which game show attracts the most annoying contestants?',
+    'question': 'which game show is most annoying?',
     'answers' : {
       'a' : {
         'content': 'game1.jpg',
@@ -502,6 +509,7 @@ var questions = {
   },
   'mannequin' : {
     'question': 'How did you feel the day after the election?',
+    // 'question': 'How do you feel about the shape of things',
     'answers' : {
       'a' : {
         'content': 'mannequin.jpg',
@@ -617,7 +625,7 @@ var questions = {
     },
   },
   'staircase' : {
-    'question': 'which staircase will lead you to the afterlife?',
+    'question': 'which staircase leads to the afterlife?',
     'answers' : {
       'a' : {
         'content': 'staircase1.jpg',
@@ -707,13 +715,13 @@ var questions = {
     'question': 'describe your presence on social media',
     'answers' : {
       'a' : {
-        'content': 'social5.jpg',
+        'content': 'social6.jpg',
         'points' : {
           'default' : 0,
         },
       },
       'b' : {
-        'content': 'social4.jpg',
+        'content': 'social7.jpg',
         'points' : {
           'default' : 0,
         },

@@ -5,7 +5,7 @@
   </head>
   <body>
     <div id="container">
-      <h1>QA</h1>
+      <h1>the shape of things</h1>
     </div>
     <script type="text/javascript" src="questions.js"></script>
     <script type="text/javascript" src="js/jquery-3.1.0.slim.min.js"></script>
@@ -21,21 +21,32 @@
             id = i;
           }
           var Q = questions[id];
-          console.log(i);
-          $('#container').append('<h2>'+count+' ('+id+') : '+Q.question+'</h2>');
-          $('#container').append('<div id="Q_'+id+'" class="question"></div>');
+
+          // console.log(i);
+
+          $('#container')
+            .append('<section id="block_'+id+'" class="block u-hide"></section>')
+            .append('<h2>'+count+' ('+id+') : '+Q.question+'</h2>')
+            .append('<div id="Q_'+id+'" class="question"></div>');
+
           for (var a in Q.answers){
             var A = Q.answers[a];
             var img = 'img/'+A.content;
-            $('#Q_'+id).append('<div id="Q_'+id+'_A_'+a+'" class="answer"></div>');
-            $('#Q_'+id+'_A_'+a).append('<div id="'+id.toString()+'_'+a+'" class="square" style="background-image:url(\''+img+'\')"></div>');
-            $('#Q_'+id+'_A_'+a).append('<p>file: '+A.content+'</p>');
+            var func = " '#block_"+id+"','#block_"+the_order[count]+"','"+a+"' ";
+            $('#Q_'+id)
+              .append('<div id="Q_'+id+'_A_'+a+'" class="answer"></div>');
+
+            $('#Q_'+id+'_A_'+a)
+              .append('<div id="'+id.toString()+'_'+a+'" class="square" style="background-image:url(\''+img+'\')"></div>')
+              .append('<p>file: '+A.content+'</p>');
+
             for (var val in A.points){
               var P = A.points
               var point = (P[val] >= 0) ? '+'+P[val] : P[val];
               $('#Q_'+id+'_A_'+a).append('<p>'+point+' '+val+'</p>');
             }
           }
+
         count++;
         }
       })

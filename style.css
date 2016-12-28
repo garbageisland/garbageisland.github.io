@@ -29,9 +29,13 @@ label, input, textarea {
 }
 .answer {
   justify-content: flex-start;
-  display:inline-block;
-  width:300px;
-  margin: 2px;
+  display: inline-block;
+  width: 300px;
+  margin: 0 20px 0 0;
+  padding: 10px;
+}
+.answer:hover{
+  background-color: #efefef;
 }
 .square {
   display:block;

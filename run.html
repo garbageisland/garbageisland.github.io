@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>quiz: prototype</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <h1>the shape of things</h1>
+    </div>
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.slim.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var the_order = (order && order.length > 0) ? order : questions;
+        var next = 1;
+        var id;
+        for (var i in the_order){
+          if (Array.isArray(the_order)){
+            id = the_order[i];
+          } else {
+            id = i;
+          }
+          var Q = questions[id];
+          var now = next-1;
+
+          // console.log(i);
+          var hide = (now > 0) ? 'u-hide' : 'u-show';
+
+          $('#container')
+            .append('<section id="block_'+now+'" class="block '+hide+'"></section>');
+
+          $('#block_'+now)
+            .append('<h2>'+next+'. '+Q.question+'</h2>')
+            .append('<div id="Q_'+id+'" class="question"></div>');
+
+          for (var letter in Q.answers){
+            var A = Q.answers[letter];
+            var img = 'img/'+A.content;
+            var func = now+', '+next+', \''+letter+'\'';
+            console.log(func);
+            $('#Q_'+id)
+              .append('<a href="#" onclick="next_question('+func+'); return false;"><div id="Q_'+id+'_A_'+letter+'" class="answer"></div></a>');
+
+            $('#Q_'+id+'_A_'+letter)
+              .append('<div id="'+id.toString()+'_'+letter+'" class="square" style="background-image:url(\''+img+'\')"></div>')
+            //  .append('<p>file: '+A.content+'</p>');
+
+            // for (var val in A.points){
+            //   var P = A.points
+            //   var point = (P[val] >= 0) ? '+'+P[val] : P[val];
+            //   $('#Q_'+id+'_A_'+letter).append('<p>'+point+' '+val+'</p>');
+            // }
+          }
+
+        next++;
+        }
+      })
+
+      selection = [];
+      function next_question(now, next, answer){
+        now  = '#block_'+now+', '+'#block_'+next;
+        next = '#block_'+next+1;
+        both = now+', '+next;
+
+        $(now).toggleClass('u-show u-hide');
+        selection.push(answer);
+        console.log(selection);
+      }
+    </script>
+  </body>
+</html>
